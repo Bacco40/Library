@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Books</title>
+        <meta charset="UTF-8">
+        <script src="script.js" defer></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page">
+            <div class="header">
+                <div class="pageTitle">My Library</div>
+                <div class="log">
+                    <div class="logTit">Library log:</div>
+                    <div class="info">Total Books Count:
+                        <div id="booksCount">0</div>
+                    </div>
+                    <div class="info">Read:
+                        <div id="readsCount">0</div>
+                    </div>
+                    <div class="info">Total Not read:
+                        <div id="NotreadCount">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="AddBook">
+                <button class="add">Add Book</button>
+                <div class="readStatus">
+                    <div class="readColor"></div>
+                    <div class="info2">Read</div>
+                    <div class="NotreadColor"></div>
+                    <div class="info2">Not Read</div>
+                </div>
+            </div>
+            <div class="library"></div>
+        </div>
+        <div class="popUp">
+            <form id="form">
+                <div class="logTit">Add New Book</div>
+                <div class="data">
+                    <p>Book title: *</p>
+                    <div><input id="b_title" type="text" name="title" placeholder="Title"></div>
+                    <p>Book author: *</p>
+                    <div><input id="b_author" type="text" name="author" placeholder="Author"> </div>
+                    <p>Book pages: *</p>
+                    <div><input id="b_pages" type="number" name="pages" placeholder="Number of pages" min="1"></div>
+                    <p>Book status: * </p>
+                    <div><select id="b_status">
+                        <option value="null" disabled selected>did you read this book?</option>
+                        <option value="true">I already read it!</option>
+                        <option value="false">I still have to read it!</option>
+                    </select>
+                    </div>
+                </div>
+                <div><button class="BtnAdd">Add Book</button></div>
+            </form>
+        </div>
+        <div class="footer">Copyright © Matteo Bacchetti - The Odin Project 2021</div>
+    </body>
+</html>
