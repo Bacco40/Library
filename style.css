@@ -52,6 +52,7 @@ body{
     font-size: 16px;
     border:0;
     border-radius: 10px;
+    cursor: pointer;
 }
 .readStatus{
     display: flex;
@@ -134,6 +135,7 @@ span{
     border-radius: 10px;
     color: ghostwhite;
     background-color:rgb(48, 45, 45) ;
+    cursor: pointer;
 }
 .BtnBooks{
     display: flex;
