@@ -154,3 +154,6 @@ span{
     display: flex;
     justify-content: space-between;
 }
+button:hover{
+    opacity: 95%;
+}
